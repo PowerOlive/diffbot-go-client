@@ -23,9 +23,8 @@ type Article struct {
 	Text          string                 `json:"text"`
 	Html          string                 `json:"html"`
 	NumPages      string                 `json:"numPages"`
-	Date          string                 `json:"date"`
+	Date          string                 `json:"estimatedDate"`
 	Author        string                 `json:"author"`
-	Tags          []string               `json:"tags,omitempty"`          // Returned with fields.
 	HumanLanguage string                 `json:"humanLanguage,omitempty"` // Returned with fields.
 	Images        []struct {
 		Url         string `json:"url"`
